@@ -1,0 +1,41 @@
+nav {
+  background-color: #333; /* Dark background */
+  padding: 10px; /* Padding around the nav */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Space out the items evenly */
+}
+
+nav li {
+  display: inline; /* Display list items inline */
+}
+
+nav a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 15px; /* Padding around the links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  background-color: #555; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+  }
+
+  nav a {
+    width: 100%; /* Full width links */
+    text-align: center; /* Center text */
+  }
+}
